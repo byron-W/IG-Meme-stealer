@@ -64,13 +64,4 @@ async function main() {
 		console.log(`Meme added`)
 	}
 }
-async function test() {
-	const link = "https://www.instagram.com/p/CGyiTW-FVK2/";
-	const { body } = await superagent.get(link).catch(err => {
-		console.log(err);
-		return;
-	})
-	console.log(body)
-}
-//test();
 main();
